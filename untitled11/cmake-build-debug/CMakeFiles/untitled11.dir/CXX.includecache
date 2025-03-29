@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/carte/CLionProjects/untitled11/ItemToPurchase.cpp
+iostream
+-
+string
+-
+ItemToPurchase.h
+C:/Users/carte/CLionProjects/untitled11/ItemToPurchase.h
+
+C:/Users/carte/CLionProjects/untitled11/ItemToPurchase.h
+string
+-
+iostream
+-
+
+C:/Users/carte/CLionProjects/untitled11/main.cpp
+iostream
+-
+cmath
+-
+fstream
+-
+iomanip
+-
+ItemToPurchase.h
+C:/Users/carte/CLionProjects/untitled11/ItemToPurchase.h
+

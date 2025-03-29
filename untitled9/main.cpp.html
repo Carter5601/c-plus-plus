@@ -1,0 +1,82 @@
+<html>
+<head>
+<title>main.cpp</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #bbb529;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #cc7832;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.cpp</font>
+</center></td></tr></table>
+<pre><span class="s0">#include </span><span class="s2">&lt;iostream&gt;</span>
+<span class="s0">#include </span><span class="s2">&lt;cmath&gt;</span>
+<span class="s3">using namespace </span><span class="s1">std</span><span class="s3">;</span>
+
+<span class="s1">project(ItemToPurchase)</span>
+
+<span class="s0">#include </span><span class="s2">&quot;ItemToPurchase.h&quot;</span>
+
+<span class="s3">double </span><span class="s1">TotalCost (</span><span class="s3">double </span><span class="s1">itemPrice</span><span class="s3">, int </span><span class="s1">itemQuantity)</span><span class="s3">;</span>
+
+<span class="s3">int </span><span class="s1">main() {</span>
+
+    <span class="s1">string itemName</span><span class="s3">;</span>
+    <span class="s3">double </span><span class="s1">itemPrice</span><span class="s3">;</span>
+    <span class="s3">int </span><span class="s1">itemQuantity</span><span class="s3">;</span>
+
+    <span class="s1">ItemToPurchase item1</span><span class="s3">;</span>
+    <span class="s1">ItemToPurchase item2</span><span class="s3">;</span>
+
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Item 1&quot; </span><span class="s1">&lt;&lt; endl</span><span class="s3">;</span>
+    <span class="s1">item1.SetName(itemName)</span><span class="s3">;</span>
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Enter the item name: &quot; </span><span class="s1">&lt;&lt; item1.GetName(itemName) &lt;&lt; endl</span><span class="s3">;</span>
+    <span class="s1">item1.SetPrice(itemPrice)</span><span class="s3">;</span>
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Enter the item price: &quot; </span><span class="s1">&lt;&lt; item1.GetPrice(itemPrice) &lt;&lt; endl</span><span class="s3">;</span>
+    <span class="s1">item1.SetQuantity(itemQuantity)</span><span class="s3">;</span>
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Enter the item quantity: &quot; </span><span class="s1">&lt;&lt; item1.GetQuantity(itemQuantity) &lt;&lt; endl</span><span class="s3">;</span>
+
+    <span class="s1">cout &lt;&lt; endl</span><span class="s3">;</span>
+
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Item 2&quot; </span><span class="s1">&lt;&lt; endl</span><span class="s3">;</span>
+    <span class="s1">item2.SetName(itemName)</span><span class="s3">;</span>
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Enter the item name: &quot; </span><span class="s1">&lt;&lt; item2.GetName(itemName)</span><span class="s3">;</span>
+    <span class="s1">item2.SetPrice(itemPrice)</span><span class="s3">;</span>
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Enter the item price: &quot; </span><span class="s1">&lt;&lt; item2.GetPrice(itemPrice)</span><span class="s3">;</span>
+    <span class="s1">item2.SetQuantity(itemQuantity)</span><span class="s3">;</span>
+    <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Enter the item quantity: &quot; </span><span class="s1">&lt;&lt; item2.GetQuantity(itemQuantity)</span><span class="s3">;</span>
+
+    <span class="s1">TotalCost(itemPrice</span><span class="s3">, </span><span class="s1">itemQuantity)</span><span class="s3">;</span>
+
+<span class="s1">}</span>
+
+ <span class="s3">double </span><span class="s1">TotalCost (</span><span class="s3">double </span><span class="s1">itemPrice</span><span class="s3">, int </span><span class="s1">itemQuantity) {</span>
+
+     <span class="s1">string itemName</span><span class="s3">;</span>
+     <span class="s3">double </span><span class="s1">totalItem1</span><span class="s3">;</span>
+     <span class="s3">double </span><span class="s1">totalItem2</span><span class="s3">;</span>
+
+     <span class="s1">ItemToPurchase item1</span><span class="s3">;</span>
+     <span class="s1">ItemToPurchase item2</span><span class="s3">;</span>
+
+     <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;TOTAL COST&quot;</span><span class="s3">;</span>
+
+     <span class="s1">cout &lt;&lt; item1.GetName(itemName) &lt;&lt; </span><span class="s2">&quot; &quot; </span><span class="s1">&lt;&lt; item1.GetQuantity(itemQuantity)</span>
+     <span class="s1">&lt;&lt; </span><span class="s2">&quot; @ $&quot; </span><span class="s1">&lt;&lt; item1.GetPrice(itemPrice) &lt;&lt; </span><span class="s2">&quot; = $&quot; </span><span class="s1">&lt;&lt; (itemPrice * itemQuantity) &lt;&lt; endl</span><span class="s3">;</span>
+     <span class="s1">totalItem1 = (itemPrice * itemQuantity)</span><span class="s3">;</span>
+
+     <span class="s1">cout &lt;&lt; item2.GetName(itemName) &lt;&lt; </span><span class="s2">&quot; &quot; </span><span class="s1">&lt;&lt; item2.GetQuantity(itemQuantity)</span>
+          <span class="s1">&lt;&lt; </span><span class="s2">&quot; @ $&quot; </span><span class="s1">&lt;&lt; item2.GetPrice(itemPrice) &lt;&lt; </span><span class="s2">&quot; = $&quot; </span><span class="s1">&lt;&lt; (itemPrice * itemQuantity) &lt;&lt; endl</span><span class="s3">;</span>
+     <span class="s1">totalItem2 = (itemPrice * itemQuantity)</span><span class="s3">;</span>
+
+     <span class="s1">cout &lt;&lt; endl</span><span class="s3">;</span>
+     <span class="s1">cout &lt;&lt; </span><span class="s2">&quot;Total: $&quot; </span><span class="s1">&lt;&lt; totalItem1 + totalItem2 &lt;&lt; endl</span><span class="s3">;</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
